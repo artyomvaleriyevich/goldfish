@@ -1,0 +1,28 @@
+.swiper__buy-sell-block{
+  display: flex;
+  flex-direction: row;
+  column-gap: 18px;
+  align-items: center;
+}
+.swiper__buy-sell-4350{
+  font-family: 'Trebuchet MS',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2A2A2A;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 63px;
+    height: 2px;
+    background: #2A2A2A;
+    transform: rotate(-15.57deg);
+    top: 8px;
+    left: -7px;
+  }
+}
+.special{
+  margin-bottom: 85px;
+}

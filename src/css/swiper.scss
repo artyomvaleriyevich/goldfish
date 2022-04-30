@@ -1,0 +1,110 @@
+.swiper{
+  padding: 55px 0 0 0;
+  display: flex;
+  column-gap: 5px;
+  width: 100%;
+}
+.header__two-list{
+  position: relative;
+}
+.swiper-slide {
+
+  display: flex;
+  justify-content: space-between;
+  column-gap: 460px;
+  padding: 234px 40px 33px 35px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+}
+.swiper__slide-bg{
+  max-width: 100%;
+  width:967px;
+  height:320px;
+  background: url("../image/swiper__image/magic.png") center/cover no-repeat;
+}
+.swiper__btn{
+  font-family: 'Trebuchet MS',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  padding: 7px 15px;
+  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  border-radius: 9px;
+  border: none;
+  outline: none;
+}
+.swiper__subtitle{
+
+  font-family: 'Trebuchet MS',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.swiper__title{
+  font-family: 'Trebuchet MS',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin-bottom: 9px;
+}
+.swiper__title-block{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list__catalog::before{
+  cursor: pointer;
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: #2A2A2A;
+  position: absolute;
+  top: 4.5px;
+  left: -19px;
+}
+.list__catalog::after{
+  cursor: pointer;
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: #2A2A2A;
+  position: absolute;
+  top: 8.55px;
+  left: -19px;
+}
+.list__catalog-a{
+  position: relative;
+}
+.list__catalog-a::before{
+  cursor: pointer;
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: #2A2A2A;
+  position: absolute;
+  top: 13px;
+  left: -19px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  width: 35px;
+  height: 35px;
+
+
+  border-radius: 50%;
+  background: #2A2A2A;
+  color: white;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 19px;
+}

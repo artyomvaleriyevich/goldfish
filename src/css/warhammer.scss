@@ -1,0 +1,109 @@
+.warhammer__section{
+  width: 100%;
+  height: 764px;
+  background: url("../image/warhammer/warhammer__logo.png") center/cover no-repeat;
+}
+.warhammer__header__two-list{
+  a{
+    color: white;
+  }
+}
+.warhammer__header__two{
+  background: #00000038;
+}
+.warhammer{
+  background: url("../image/warhammer/war_bg.png") center/cover no-repeat;
+  &__catalog{
+    padding: 100px 0 85px 0;
+  }
+  &__catalog-row{
+    margin-top: 50px;
+    display: flex;
+    column-gap: 30px;
+    flex-direction: row;
+  }
+  &__ul{
+    padding: 55px 43px;
+    background: linear-gradient(180deg, #4C141A 0%, #210709 100%);
+    border-radius: 9px;
+    width: 350px;
+    height: 100%;
+    li{
+      font-family: 'Trebuchet MS',sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 205%;
+      color: #FFF6EB;
+      cursor: pointer;
+      &:hover{
+        color: #FB791B;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__title{
+    margin-top: 154px;
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 67px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__subtitle{
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  &__btn{
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    padding: 15px 70px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 9px;
+    transition: 1s;
+    &:hover{
+      transition: 1s;
+      transform: scale(1.3);
+    }
+  }
+
+
+
+
+
+}
+.warhammer__catalog-btn{
+  padding: 13px 80px;
+  background: linear-gradient(180deg, #4C141A 0%, #210709 100%);
+  border-radius: 11px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: 'Trebuchet MS',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 142.11%;
+  color: #FEEBF6;
+}
+.warhammer__catalog-text{
+  font-family: 'Trebuchet MS',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFF6EB;
+}
