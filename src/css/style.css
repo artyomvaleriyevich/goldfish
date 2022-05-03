@@ -186,7 +186,7 @@ body {
 }
 
 .swiper {
-  padding: 55px 0 0 0;
+  padding: 20px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,8 +444,8 @@ body {
   padding: 30px;
 }
 .swiper__buy:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1256,7 +1256,52 @@ textarea {
           justify-content: center;
   width: 70%;
 }
-.popup__register::before {
+.popup__logins2 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  color: #2A2A2A;
+  position: relative;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 2px solid #2A2A2A12;
+  width: 100%;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+}
+.popup__logins2-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.popup__login2 {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+}
+.popup__register2 {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+}
+.popup__register2::before {
   content: "";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1831,7 +1876,126 @@ textarea {
   background: url("../image/Evens/warhammer.png") center/cover no-repeat;
 }
 
+.overlay__catalog {
+  max-width: 100%;
+  position: fixed;
+  top: 100px;
+  left: 185px;
+  width: 1130px;
+  height: 350px;
+  background: #FFFBF8;
+  -webkit-box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+          box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+  z-index: 1010;
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 249.6%;
+  color: #2A2A2A;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+.overlay__catalog-active {
+  opacity: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.overlay__catalog-titles {
+  cursor: pointer;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.overlay__catalog-titles:hover {
+  background: #F9A43F;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.overlay__catalog-titles::before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid rgba(42, 42, 42, 0.26);
+}
+.overlay__catalog-row {
+  max-width: 100%;
+  width: 270px;
+  height: 100%;
+}
+.overlay__catalog-row::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 267px;
+  border-right: 2px solid rgba(42, 42, 42, 0.26);
+}
+.overlay__catalog-section {
+  cursor: pointer;
+  padding: 0 10px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.overlay__catalog-section:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: #F9A43F;
+}
+
+.overlay__catalog-btn {
+  cursor: pointer;
+}
+.overlay__catalog-btn:hover {
+  color: #F9A43F;
+}
+
 .goTop {
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
   display: inline-block;
   position: fixed;
   padding: 10px 25px;

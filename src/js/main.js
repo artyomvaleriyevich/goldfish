@@ -47,32 +47,28 @@ document.querySelector('.header__first-login').onclick = function () {
 document.querySelector('.popup__register').onclick = function () {
     document.querySelector('.overlay').classList.add('overlay_active')
     document.querySelector('.popup__form-register').classList.add('popup__form-register-active')
-    document.querySelector('.popup__logins').classList.add('popup__logins-active')
-
+    document.querySelector('.popup__logins2').classList.add('popup__logins2-active')
     document.querySelector('.popup__form-login').classList.remove('popup__form-login-active')
+    document.querySelector('.popup__logins').classList.remove('popup__logins-active')
 }
+
+document.querySelector('.popup__login2').onclick = function () {
+    document.querySelector('.overlay').classList.add('overlay_active')
+    document.querySelector('.popup__form-login').classList.add('popup__form-login-active')
+    document.querySelector('.popup__logins2').classList.remove('popup__logins2-active')
+    document.querySelector('.popup__form-register').classList.remove('popup__form-register-active')
+    document.querySelector('.popup__logins').classList.add('popup__logins-active')
+}
+
+
+
 
 
 document.querySelector('.popup__close').onclick = function () {
     document.querySelector('.overlay').classList.remove('overlay_active')
-    document.querySelector('.popup__logins').classList.remove('popup__logins-active')
     document.querySelector('.popup__form-login').classList.remove('popup__form-login-active')
+    document.querySelector('.popup__form-register').classList.remove('popup__form-register-active')
 }
-
-VANTA.NET({
-    el: "#catalog",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0xff8200,
-    backgroundColor: 0x232831,
-    points: 14.00,
-    maxDistance: 26.00,
-})
 
 var selector = document.getElementById("tel");
 
@@ -92,3 +88,12 @@ var selector = document.getElementById("telefon");
 
 var im = new Inputmask("+\\9\\9\\6(999) -99-99-99");
 im.mask(selector);
+
+
+document.querySelector('.overlay__catalog-btn').onclick =function () {
+    document.querySelector('.overlay__catalog').classList.add('overlay__catalog-active')
+}
+
+document.querySelector('.overlay__catalog-title').onclick =function () {
+    document.querySelector('.overlay__catalog').classList.remove('overlay__catalog-active')
+}
