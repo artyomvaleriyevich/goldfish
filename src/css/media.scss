@@ -1,0 +1,259 @@
+@media (max-width: 1200px) {
+  .header__two-list{
+    font-size: 15px;
+    column-gap: 58px;
+  }
+  .header__first_content {
+    padding: 23px 23px;
+    column-gap: 33px;
+  }
+  .header_two_content {
+    padding: 17px 29px 1px;
+    font-size: 13px;
+    column-gap: 30px;
+  }
+  .catalog {
+    padding: 30px;
+  }
+  .catalog__allgame-row{
+    width: calc(76% - 10.5px);
+  }
+  .catalog__video{
+    height: 228px;
+  }
+  .catalog__game{
+    height: 312px;
+  }
+  .title{
+    padding: 0 20px;
+  }
+  .evens{
+    padding: 0 20px;
+  }
+  .evens__card-block{
+    padding: 15px 28px;
+  }
+  .evens__btn{
+    margin: 0;
+  }
+  .info__content{
+    padding: 0 20px;
+  }
+  .goldfish__info-title{
+    font-size: 30px;
+  }
+  .godlfish__info-flex{
+    padding: 0 20px;
+  }
+  .special{
+    margin-bottom: 0;
+  }
+  .contact{
+    padding: 0 20px;
+    margin-bottom: 67px;
+  }
+  .contact__form-input{
+    width: 390px;
+  }
+  .contact__form-textatea{
+    width: 390px;
+  }
+  .contact__form-btn{
+    width: 390px;
+  }
+  .footer__content{
+    padding: 0 20px;
+  }
+  .footer__li{
+    font-size: 16px;
+  }
+  .footer__btn{
+    padding: 13px 28px;
+  }
+  .footer hr{
+    margin-top: 35px;
+  }
+  .footer__two{
+    padding: 30px 20px;
+  }
+  .catalog__row{
+    align-items: center;
+  }
+
+}
+@media (max-width: 1024px) {
+  .header__first_content{
+    column-gap: 24px;
+  }
+  .header_two_content{
+    padding: 17px 29px 1px;
+  }
+  .header__two-list{
+    column-gap: 53px;
+  }
+  .catalog__allgame-row {
+    width: calc(84% - 10.5px);
+  }
+  .catalog{
+    padding: 20px;
+  }
+  .catalog__video{
+    height: 214px;
+  }
+  .catalog__game{
+    height: 280px;
+  }
+  .evens {
+    margin-bottom: 60px;
+  }
+  .goldfish__info-title {
+    font-size: 28px;
+  }
+  .goldfish {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .header__first-img{
+    width: 110px;
+  }
+  .header__first_content{
+    column-gap: 10px;
+  }
+  .header__first-label-block{
+    width: 334px;
+  }
+  .header__two-list {
+    column-gap: 12px;
+  }
+  .icons{
+    column-gap: 11px;
+  }
+  .swiper__title{
+    font-size: 23px;
+  }
+  .header__first-image{
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide{
+    column-gap: 350px;
+  }
+  .catalog__card{
+    width: 204px;
+    height: 172px;
+  }
+  .catalog__card img{
+    width: 204px;
+    height: 129px;
+  }
+  .catalog__allgame-row {
+    width: calc(120% - 10.5px);
+  }
+  .catalog__video {
+    height: 157px;
+  }
+  .catalog__game {
+    height: 216px;
+  }
+  .evens__card-block {
+    padding: 15px 20px;
+  }
+  .evens__card-title{
+    font-size: 15px;
+  }
+  .evens__card-time{
+    font-size: 13px;
+  }
+  .evens__card-info{
+    font-size: 14px;
+  }
+  .evens__btn{
+    padding: 14px 72px;
+  }
+  .info__card-title{
+    font-size: 13px;
+  }
+  .info__card-subtitle{
+    font-size: 12px;
+  }
+  .info__btn{
+    padding: 15px 20px;
+  }
+  .goldfish__info-title {
+    font-size: 18px;
+  }
+  .goldfish__info-center{
+    font-size: 15px;
+  }
+  .header__first-label-block {
+    width: 295px;
+  }
+  .header__two-list a{
+    font-size: 14px;
+  }
+  .header__two-list{
+    column-gap: 18px;
+  }
+  .catalog__row{
+    flex-direction: column;
+  }
+  .catalog__game{
+    height: 290px;
+    width: 408px;
+    margin-bottom: 20px;
+  }
+  .catalog__video {
+    height: 230px;
+  }
+  .catalog__card{
+    width: 290px;
+  }
+  .catalog__card img{
+    width: 290px;
+  }
+  .catalog__allgame-row {
+    width: calc(84% - 10.5px);
+  }
+  .godlfish__info-flex{
+    row-gap: 20px;
+    flex-direction: column-reverse;
+  }
+  .goldfish__info-center{
+    font-size: 16px;
+    width: 100%;
+  }
+  .goldfish__info-title{
+    font-size: 32px;
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+  .contact__info-flex{
+    row-gap: 17px;
+  }
+  .contact__style{
+    font-size: 17px;
+  }
+  .contact__form-input{
+    width: 318px;
+  }
+  .contact__form-textatea{
+    width: 318px;
+  }
+  .contact__form-btn {
+    width: 318px;
+  }
+  .contact__maps{
+    width: 359px
+  }
+  .footer__ul_1, .footer__ul_3{
+    display: none;
+  }
+  .footer__two-icons{
+    display: none;
+  }
+
+}
+@media (max-width: 767px) {
+  
+}

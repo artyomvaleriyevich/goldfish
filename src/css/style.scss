@@ -50,7 +50,8 @@ body{
 @import "./warhammer";
 @import "./evens__index";
 @import "./overlay__catalog";
-
+@import "./media";
+@import "./magic";
 
 
 .goTop{
@@ -60,11 +61,13 @@ body{
   font-size: 16px;
   line-height: 19px;
 
+  bottom: 80px;
+  right: 40px;
+
+
   display: inline-block;
   position: fixed;
   padding: 10px 25px;
-  bottom: 80px;
-  right: 40px;
   background: #FB791B;
   color: white;
   text-decoration: none;

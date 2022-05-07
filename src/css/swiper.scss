@@ -31,12 +31,16 @@
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: none;
 
   padding: 7px 15px;
   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
   border-radius: 9px;
   border: none;
   outline: none;
+  display: flex;
+  align-items: center;
 }
 .swiper__subtitle{
 

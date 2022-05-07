@@ -1,10 +1,10 @@
 .overlay__catalog{
   max-width: 100%;
-  position: fixed;
+  position: absolute;
   top: 100px;
   left: 185px;
   width: 1130px;
-  height: 350px;
+  height: 338px;
   background: #FFFBF8;
   box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
   z-index: 1010;
@@ -60,6 +60,27 @@
       border-right: 2px solid rgba(42, 42, 42, 0.26);
     }
   }
+  &-card{
+    padding-top: 17px;
+    padding-left: 30px;
+    &-ul{
+      display: flex;
+      flex-direction: row;
+      column-gap: 58px;
+      li{
+        cursor: pointer;
+        &:hover{
+          color: #F9A43F;
+        }
+      }
+    }
+    &-hide1,&-hide2,&-hide3,&-hide4,&-hide5,&-hide6,&-hide7{
+      display: none;
+      &-active{
+        display: block;
+      }
+    }
+  }
   &-section{
     cursor: pointer;
     padding: 0 10px 0 15px;
@@ -75,6 +96,20 @@
     }
   }
 }
+.overlay__catalog-section-active-hide1,
+.overlay__catalog-section-active-hide2,
+.overlay__catalog-section-active-hide3,
+.overlay__catalog-section-active-hide4,
+.overlay__catalog-section-active-hide5,
+.overlay__catalog-section-active-hide6,
+.overlay__catalog-section-active-hide7{
+  &-active{
+    background: #F9A43F;
+  }
+}
+
+
+
 
 .overlay__catalog-btn{
   cursor: pointer;

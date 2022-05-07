@@ -93,6 +93,12 @@ textarea{
   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
   border-radius: 9px;
   border: none;
+  cursor: pointer;
+  transition: 3s;
+  &:hover{
+    transition: 3s;
+    background: gray;
+  }
 }
 .contact__form-info{
   margin-top: 15px;

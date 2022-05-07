@@ -47,6 +47,10 @@ body {
   background: #2A2A2A;
 }
 
+.header__first-label {
+  margin: 0;
+}
+
 .header__first_content {
   padding: 23px 0;
   display: -webkit-box;
@@ -156,6 +160,7 @@ body {
 }
 
 .header__two-list {
+  position: relative;
   font-family: "Trebuchet MS", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -230,11 +235,19 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: none;
   padding: 7px 15px;
   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
   border-radius: 9px;
   border: none;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .swiper__subtitle {
@@ -343,12 +356,6 @@ body {
   color: #F9A43F;
 }
 
-.catalog__game img {
-  width: 540px;
-  height: 334px;
-  border-radius: 9px 9px 0 0;
-}
-
 .catalog__row {
   margin-top: 30px;
   display: -webkit-box;
@@ -410,7 +417,8 @@ body {
 .catalog__video {
   border-radius: 9px 9px 0 0;
   width: 100%;
-  height: 334px;
+  height: 305px;
+  margin-bottom: 13px;
 }
 
 .swiper__buy-row {
@@ -965,6 +973,14 @@ textarea {
   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
   border-radius: 9px;
   border: none;
+  cursor: pointer;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+.contact__form-btn:hover {
+  -webkit-transition: 3s;
+  transition: 3s;
+  background: gray;
 }
 
 .contact__form-info {
@@ -1028,6 +1044,12 @@ textarea {
   cursor: pointer;
   margin-bottom: 9px;
 }
+.footer__li-info:hover {
+  color: #F9A43F;
+}
+.footer__li:hover {
+  color: #F9A43F;
+}
 .footer__btn {
   font-family: "Trebuchet MS", sans-serif;
   font-style: normal;
@@ -1052,9 +1074,26 @@ textarea {
   transition: 1s;
 }
 .footer__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: right;
 }
-.footer__address-tel, .footer__address-street {
+.footer__address-tel {
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.footer__address-street {
   font-family: "Trebuchet MS", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1878,11 +1917,11 @@ textarea {
 
 .overlay__catalog {
   max-width: 100%;
-  position: fixed;
+  position: absolute;
   top: 100px;
   left: 185px;
   width: 1130px;
-  height: 350px;
+  height: 338px;
   background: #FFFBF8;
   -webkit-box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
           box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
@@ -1957,6 +1996,34 @@ textarea {
   left: 267px;
   border-right: 2px solid rgba(42, 42, 42, 0.26);
 }
+.overlay__catalog-card {
+  padding-top: 17px;
+  padding-left: 30px;
+}
+.overlay__catalog-card-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 58px;
+     -moz-column-gap: 58px;
+          column-gap: 58px;
+}
+.overlay__catalog-card-ul li {
+  cursor: pointer;
+}
+.overlay__catalog-card-ul li:hover {
+  color: #F9A43F;
+}
+.overlay__catalog-card-hide1, .overlay__catalog-card-hide2, .overlay__catalog-card-hide3, .overlay__catalog-card-hide4, .overlay__catalog-card-hide5, .overlay__catalog-card-hide6, .overlay__catalog-card-hide7 {
+  display: none;
+}
+.overlay__catalog-card-hide1-active, .overlay__catalog-card-hide2-active, .overlay__catalog-card-hide3-active, .overlay__catalog-card-hide4-active, .overlay__catalog-card-hide5-active, .overlay__catalog-card-hide6-active, .overlay__catalog-card-hide7-active {
+  display: block;
+}
 .overlay__catalog-section {
   cursor: pointer;
   padding: 0 10px 0 15px;
@@ -1983,11 +2050,388 @@ textarea {
   background: #F9A43F;
 }
 
+.overlay__catalog-section-active-hide1-active,
+.overlay__catalog-section-active-hide2-active,
+.overlay__catalog-section-active-hide3-active,
+.overlay__catalog-section-active-hide4-active,
+.overlay__catalog-section-active-hide5-active,
+.overlay__catalog-section-active-hide6-active,
+.overlay__catalog-section-active-hide7-active {
+  background: #F9A43F;
+}
+
 .overlay__catalog-btn {
   cursor: pointer;
 }
 .overlay__catalog-btn:hover {
   color: #F9A43F;
+}
+
+@media (max-width: 1200px) {
+  .header__two-list {
+    font-size: 15px;
+    -webkit-column-gap: 58px;
+       -moz-column-gap: 58px;
+            column-gap: 58px;
+  }
+
+  .header__first_content {
+    padding: 23px 23px;
+    -webkit-column-gap: 33px;
+       -moz-column-gap: 33px;
+            column-gap: 33px;
+  }
+
+  .header_two_content {
+    padding: 17px 29px 1px;
+    font-size: 13px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+
+  .catalog {
+    padding: 30px;
+  }
+
+  .catalog__allgame-row {
+    width: calc(76% - 10.5px);
+  }
+
+  .catalog__video {
+    height: 228px;
+  }
+
+  .catalog__game {
+    height: 312px;
+  }
+
+  .title {
+    padding: 0 20px;
+  }
+
+  .evens {
+    padding: 0 20px;
+  }
+
+  .evens__card-block {
+    padding: 15px 28px;
+  }
+
+  .evens__btn {
+    margin: 0;
+  }
+
+  .info__content {
+    padding: 0 20px;
+  }
+
+  .goldfish__info-title {
+    font-size: 30px;
+  }
+
+  .godlfish__info-flex {
+    padding: 0 20px;
+  }
+
+  .special {
+    margin-bottom: 0;
+  }
+
+  .contact {
+    padding: 0 20px;
+    margin-bottom: 67px;
+  }
+
+  .contact__form-input {
+    width: 390px;
+  }
+
+  .contact__form-textatea {
+    width: 390px;
+  }
+
+  .contact__form-btn {
+    width: 390px;
+  }
+
+  .footer__content {
+    padding: 0 20px;
+  }
+
+  .footer__li {
+    font-size: 16px;
+  }
+
+  .footer__btn {
+    padding: 13px 28px;
+  }
+
+  .footer hr {
+    margin-top: 35px;
+  }
+
+  .footer__two {
+    padding: 30px 20px;
+  }
+
+  .catalog__row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .header__first_content {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+
+  .header_two_content {
+    padding: 17px 29px 1px;
+  }
+
+  .header__two-list {
+    -webkit-column-gap: 53px;
+       -moz-column-gap: 53px;
+            column-gap: 53px;
+  }
+
+  .catalog__allgame-row {
+    width: calc(84% - 10.5px);
+  }
+
+  .catalog {
+    padding: 20px;
+  }
+
+  .catalog__video {
+    height: 214px;
+  }
+
+  .catalog__game {
+    height: 280px;
+  }
+
+  .evens {
+    margin-bottom: 60px;
+  }
+
+  .goldfish__info-title {
+    font-size: 28px;
+  }
+
+  .goldfish {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .header__first-img {
+    width: 110px;
+  }
+
+  .header__first_content {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .header__first-label-block {
+    width: 334px;
+  }
+
+  .header__two-list {
+    -webkit-column-gap: 12px;
+       -moz-column-gap: 12px;
+            column-gap: 12px;
+  }
+
+  .icons {
+    -webkit-column-gap: 11px;
+       -moz-column-gap: 11px;
+            column-gap: 11px;
+  }
+
+  .swiper__title {
+    font-size: 23px;
+  }
+
+  .header__first-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .swiper-slide {
+    -webkit-column-gap: 350px;
+       -moz-column-gap: 350px;
+            column-gap: 350px;
+  }
+
+  .catalog__card {
+    width: 204px;
+    height: 172px;
+  }
+
+  .catalog__card img {
+    width: 204px;
+    height: 129px;
+  }
+
+  .catalog__allgame-row {
+    width: calc(120% - 10.5px);
+  }
+
+  .catalog__video {
+    height: 157px;
+  }
+
+  .catalog__game {
+    height: 216px;
+  }
+
+  .evens__card-block {
+    padding: 15px 20px;
+  }
+
+  .evens__card-title {
+    font-size: 15px;
+  }
+
+  .evens__card-time {
+    font-size: 13px;
+  }
+
+  .evens__card-info {
+    font-size: 14px;
+  }
+
+  .evens__btn {
+    padding: 14px 72px;
+  }
+
+  .info__card-title {
+    font-size: 13px;
+  }
+
+  .info__card-subtitle {
+    font-size: 12px;
+  }
+
+  .info__btn {
+    padding: 15px 20px;
+  }
+
+  .goldfish__info-title {
+    font-size: 18px;
+  }
+
+  .goldfish__info-center {
+    font-size: 15px;
+  }
+
+  .header__first-label-block {
+    width: 295px;
+  }
+
+  .header__two-list a {
+    font-size: 14px;
+  }
+
+  .header__two-list {
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
+  }
+
+  .catalog__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .catalog__game {
+    height: 290px;
+    width: 408px;
+    margin-bottom: 20px;
+  }
+
+  .catalog__video {
+    height: 230px;
+  }
+
+  .catalog__card {
+    width: 290px;
+  }
+
+  .catalog__card img {
+    width: 290px;
+  }
+
+  .catalog__allgame-row {
+    width: calc(84% - 10.5px);
+  }
+
+  .godlfish__info-flex {
+    row-gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .goldfish__info-center {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .goldfish__info-title {
+    font-size: 32px;
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+
+  .contact__info-flex {
+    row-gap: 17px;
+  }
+
+  .contact__style {
+    font-size: 17px;
+  }
+
+  .contact__form-input {
+    width: 318px;
+  }
+
+  .contact__form-textatea {
+    width: 318px;
+  }
+
+  .contact__form-btn {
+    width: 318px;
+  }
+
+  .contact__maps {
+    width: 359px;
+  }
+
+  .footer__ul_1, .footer__ul_3 {
+    display: none;
+  }
+
+  .footer__two-icons {
+    display: none;
+  }
+}
+.magic__section {
+  width: 100%;
+  height: 764px;
+  background: url("../image/magic/magic_bg.png") center/cover no-repeat;
 }
 
 .goTop {
@@ -1996,11 +2440,11 @@ textarea {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+  bottom: 80px;
+  right: 40px;
   display: inline-block;
   position: fixed;
   padding: 10px 25px;
-  bottom: 80px;
-  right: 40px;
   background: #FB791B;
   color: white;
   text-decoration: none;

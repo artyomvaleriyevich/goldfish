@@ -24,11 +24,6 @@
 
   }
 }
-.catalog__game img{
-  width: 540px;
-  height: 334px;
-  border-radius: 9px 9px 0 0;
-}
 .catalog__row{
   margin-top: 30px;
   display: flex;
@@ -73,5 +68,6 @@
 .catalog__video{
   border-radius: 9px 9px 0 0;
   width: 100%;
-  height: 334px;
+  height: 305px;
+  margin-bottom: 13px;
 }

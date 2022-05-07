@@ -19,6 +19,14 @@
     color: #FFFFFF;
     cursor: pointer;
     margin-bottom: 9px;
+    &-info{
+      &:hover{
+        color: #F9A43F;
+      }
+    }
+    &:hover{
+      color: #F9A43F;
+    }
   }
   &__btn{
     font-family: 'Trebuchet MS',sans-serif;
@@ -42,7 +50,19 @@
     margin-bottom: 26px;
   }
   &__address{
-    &-tel, &-street{
+    display: flex;
+    flex-direction: column;
+    &-tel{
+      font-family: 'Trebuchet MS',sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    &-street{
       font-family: 'Trebuchet MS',sans-serif;
       font-style: normal;
       font-weight: 700;
