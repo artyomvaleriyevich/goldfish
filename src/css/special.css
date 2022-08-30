@@ -1,0 +1,40 @@
+.swiper__buy-sell-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper__buy-sell-4350 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2A2A2A;
+  position: relative;
+}
+.swiper__buy-sell-4350::before {
+  content: "";
+  position: absolute;
+  width: 63px;
+  height: 2px;
+  background: #2A2A2A;
+  -webkit-transform: rotate(-15.57deg);
+          transform: rotate(-15.57deg);
+  top: 8px;
+  left: -7px;
+}
+
+.special {
+  margin-bottom: 85px;
+}
